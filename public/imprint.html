@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+    <script type="text/javascript" src="javascript/app.js"></script>
   </head>
   <body>
     <div id="pagewrapper">
@@ -15,7 +17,6 @@
           <p>Software muss nicht kompliziert sein.<br/>Erst recht nicht für Anwender</p>
           <ul class="navigation">
             <li><a href="index.html">START</a></li>
-            <li><a href="#kontakt">KONTAKT</a></li>
           </ul>
         </div>
         <div class="content">
@@ -34,7 +35,7 @@
             <p>
               Telefon: +49 (0) 331 28 05 454<br/>
               Telefax: +49 (0) 331 28 05 451<br/>
-              E-Mail: <a href="mailto:info@cileos.com">info@cileos.com</a>
+              <span id="emailLink"></span>              
             </p>
             <h3>Registereintrag:</h3>
             <p>Amtsgericht Potsdam HRB 22946 P</p>

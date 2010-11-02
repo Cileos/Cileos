@@ -46,12 +46,22 @@ blockquote, q {
 	quotes: "" "";
 }
 /* --- ENDE --- */
+/** FONT FACE **/
+@font-face {
+	font-family: "Neutra Text";
+	src: url("../images/NeutraText-Book.otf");			
+}
+@font-face {
+	font-family: "Neutra Text Light";
+	src: url("../images/NeutraText-Light.otf");			
+}
+/* --- ENDE --- */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
   background: url(../images/background.png);
-  font-family: 'Droid Serif', Georgia, Serif;
+  font-family: 'Neutra Text', Helvetica, 'Droid Sans', 'Lucida Grande', Sans-Serif;
   font-size: 14px;
   line-height: 1.5;
   color: white;
@@ -60,14 +70,14 @@ html, body {
 
 h2 {
   margin: -10px 0 15px 0;
-  font-family: Helvetica, 'Lucida Grande', Sans-Serif;
+  font-family: 'Neutra Text', Helvetica, 'Droid Sans', 'Lucida Grande', Sans-Serif;
   font-size: 1.6em;
   color: #f7953c;
 }
 
 h3 {
   margin: 10px 0;
-  font-family: Helvetica, 'Lucida Grande', Sans-Serif;
+  font-family: 'Neutra Text', Helvetica, 'Droid Sans', 'Lucida Grande', Sans-Serif;
   font-size: 1.1em;
   color: #f7953c;
 }
@@ -102,7 +112,7 @@ em, a, #footer {
 
 .header p {
   margin-top: 10px;
-  font-family: 'Neutra Text', 'Droid Sans', 'Lucida Grande', Sans-Serif;
+  font-family: 'Neutra Text', Helvetica, 'Droid Sans', 'Lucida Grande', Sans-Serif;
   font-size: 1.3em;
   color: #000;
 }
@@ -127,7 +137,7 @@ em, a, #footer {
   padding: 5px 10px 1px 10px;
   margin-left: 3px;
   background: #f7953c;
-  font-family: 'Droid Sans', Helvetica, 'Lucida Grande', Sans-Serif;
+  font-family: 'Neutra Text', Helvetica, 'Droid Sans', 'Lucida Grande', Sans-Serif;
   color: #fff;
 }
 
