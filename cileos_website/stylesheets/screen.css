@@ -1,0 +1,191 @@
+/* --- RESET CSS --- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+/* --- ENDE --- */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url(../images/background.png);
+  font-family: Georgia, Serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+}
+
+h2 {
+  margin: -10px 0 15px 0;
+  font-family: Helvetica, 'Lucida Grande', Sans-Serif;
+  font-size: 1.6em;
+  color: #f7953c;
+}
+
+em, a, #footer {
+  color: #f7953c;
+}
+
+#pagewrapper {
+  width: 676px;
+  min-height: 100%;
+  margin: 0 auto;
+  background: url(../images/leftshadow.png) top left repeat-y, url(../images/rightshadow.png) top right repeat-y;
+}
+
+#page {
+  width: 600px;
+  margin: 0 auto;
+  overflow: auto;
+  padding-bottom: 35px;
+  background: #000;
+}
+
+.header {
+  height: 200px;
+  padding: 0 30px;
+  background: #fff;
+}
+
+.header img {
+  margin-top: 50px;
+}
+
+.header p {
+  font-family: 'Neutra Text', 'Lucida Grande', Sans-Serif;
+  font-size: 1.3em;
+  color: #000;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.navigation {
+  display: inline;
+  float: right;
+  position: relative;
+  top: 22px;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation a {
+  display: block;
+  padding: 5px 10px 1px 10px;
+  margin-left: 3px;
+  background: #f7953c;
+  font-family: Helvetica, 'Lucida Grande', Sans-Serif;
+  color: #fff;
+}
+
+.navigation a:hover,
+.active > a {
+  background: #000;
+}
+
+.content {
+  padding: 30px;
+  height: 100%;
+}
+
+.column,
+.contact {
+  width: 260px;
+  margin-bottom: 30px;
+}
+
+.contact input[type="text"] {
+  height: 20px;
+}
+
+.contact textarea {
+  height: 100px;
+  max-height: 100px;
+}
+
+.contact input[type="submit"] {
+  padding: 5px 30px;
+  background: #f7953c;
+  border: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+.contact input[type="text"], textarea {
+  margin-top: 10px;
+  padding: 5px;
+  max-width: 260px;
+  width: 260px;
+  border: 2px solid #f7953c;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-box-shadow: inset 1px 1px 3px #000;
+  -moz-box-shadow: inset 1px 1px 3px #000;
+}
+
+.left {
+  float: left;
+  margin-right: 10px;
+}
+
+.right {
+  float: right;
+  margin-left: 10px;
+}
+
+#footer {
+  width: 540px;
+  height: 35px;
+  margin: -35px auto 0 auto;
+  padding: 5px 30px;
+  position: relative;
+  clear: both;
+  background: #fff;
+  text-align: right;
+  color: ;
+}
