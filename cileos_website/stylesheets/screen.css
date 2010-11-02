@@ -166,7 +166,7 @@ em, a, #footer {
 .contact input[type="text"], textarea {
   margin-top: 10px;
   padding: 5px;
-  max-width: 260px;
+  max-width: 240px;
   width: 260px;
   border: 2px solid #f7953c;
   border-radius: 5px;
