@@ -51,7 +51,7 @@ html, body {
   margin: 0;
   padding: 0;
   background: url(../images/background.png);
-  font-family: Georgia, Serif;
+  font-family: 'Droid Serif', Georgia, Serif;
   font-size: 14px;
   line-height: 1.5;
   color: white;
@@ -64,15 +64,22 @@ h2 {
   color: #f7953c;
 }
 
+h3 {
+  margin: 10px 0;
+  font-family: Helvetica, 'Lucida Grande', Sans-Serif;
+  font-size: 1.1em;
+  color: #f7953c;
+}
+
 em, a, #footer {
   color: #f7953c;
 }
 
 #pagewrapper {
-  width: 676px;
+  width: 674px;
   min-height: 100%;
   margin: 0 auto;
-  background: url(../images/leftshadow.png) top left repeat-y, url(../images/rightshadow.png) top right repeat-y;
+  background: url(../images/shadows.png) top left repeat-y;
 }
 
 #page {
@@ -80,7 +87,6 @@ em, a, #footer {
   margin: 0 auto;
   overflow: auto;
   padding-bottom: 35px;
-  background: #000;
 }
 
 .header {
@@ -94,7 +100,8 @@ em, a, #footer {
 }
 
 .header p {
-  font-family: 'Neutra Text', 'Lucida Grande', Sans-Serif;
+  margin-top: 10px;
+  font-family: 'Neutra Text', 'Droid Sans', 'Lucida Grande', Sans-Serif;
   font-size: 1.3em;
   color: #000;
 }
@@ -107,7 +114,7 @@ em, a, #footer {
   display: inline;
   float: right;
   position: relative;
-  top: 22px;
+  top: 12px;
 }
 
 .navigation li {
@@ -119,7 +126,7 @@ em, a, #footer {
   padding: 5px 10px 1px 10px;
   margin-left: 3px;
   background: #f7953c;
-  font-family: Helvetica, 'Lucida Grande', Sans-Serif;
+  font-family: 'Droid Sans', Helvetica, 'Lucida Grande', Sans-Serif;
   color: #fff;
 }
 
@@ -130,7 +137,6 @@ em, a, #footer {
 
 .content {
   padding: 30px;
-  height: 100%;
 }
 
 .column,
@@ -182,10 +188,16 @@ em, a, #footer {
   width: 540px;
   height: 35px;
   margin: -35px auto 0 auto;
-  padding: 5px 30px;
+  padding: 0 30px;
   position: relative;
   clear: both;
   background: #fff;
   text-align: right;
-  color: ;
+}
+
+.legal {
+  float: left;
+  padding-bottom: 30px;
+  font-size: 0.8em;
+  display: block;
 }
