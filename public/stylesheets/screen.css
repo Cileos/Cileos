@@ -1,51 +1,4 @@
-/* --- RESET CSS --- */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-weight: inherit;
-	font-style: inherit;
-	font-size: 100%;
-	font-family: inherit;
-	vertical-align: baseline;
-}
 
-:focus {
-	outline: 0;
-}
-body {
-	line-height: 1;
-	color: black;
-	background: white;
-}
-ol, ul {
-	list-style: none;
-}
-
-table {
-	border-collapse: separate;
-	border-spacing: 0;
-}
-caption, th, td {
-	text-align: left;
-	font-weight: normal;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: "";
-}
-blockquote, q {
-	quotes: "" "";
-}
-/* --- ENDE --- */
 /** FONT FACE **/
 @font-face {
 	font-family: "Neutra Text";
@@ -62,16 +15,22 @@ html, body {
   padding: 0;
   background: url(../images/background.png);
   font-family: 'Neutra Text', Helvetica, 'Droid Sans', 'Lucida Grande', Sans-Serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   color: white;
   -webkit-font-smoothing: antialiased;
 }
 
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
 h2 {
-  margin: -10px 0 15px 0;
+  margin: 0 0 15px 0;
   font-family: 'Neutra Text', Helvetica, 'Droid Sans', 'Lucida Grande', Sans-Serif;
   font-size: 1.6em;
+  
   color: #f7953c;
 }
 
@@ -83,6 +42,7 @@ h3 {
 }
 
 em, a, #footer {
+  font-style: normal;
   color: #f7953c;
 }
 
@@ -101,44 +61,45 @@ em, a, #footer {
 }
 
 .header {
-  height: 200px;
   padding: 0 30px;
   background: #fff;
 }
 
 .header img {
   margin-top: 50px;
+  border: none;
 }
 
 .header p {
-  margin-top: 10px;
-  font-family: 'Neutra Text', Helvetica, 'Droid Sans', 'Lucida Grande', Sans-Serif;
-  font-size: 1.3em;
   color: #000;
-}
-
-.header a {
-  text-decoration: none;
+  font-size: 1.1em;
+  margin: 10px 0;
+  padding-bottom: 20px;
 }
 
 .navigation {
   display: inline;
   float: right;
-  position: relative;
-  top: 12px;
+  margin-top: -34px;
+  
+  list-style-type: none;
 }
 
 .navigation li {
   float: left;
+  margin: 0 0 0 3px;
 }
 
 .navigation a {
   display: block;
-  padding: 5px 10px 1px 10px;
-  margin-left: 3px;
+  padding: 0 10px;
   background: #f7953c;
-  font-family: 'Neutra Text', Helvetica, 'Droid Sans', 'Lucida Grande', Sans-Serif;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
   color: #fff;
+  text-decoration: none;
 }
 
 .navigation a:hover,
@@ -154,6 +115,7 @@ em, a, #footer {
 .contact {
   width: 260px;
   margin-bottom: 30px;
+  border: none;
 }
 
 .contact input[type="text"] {
@@ -163,6 +125,11 @@ em, a, #footer {
 .contact textarea {
   height: 100px;
   max-height: 100px;
+}
+
+.contact {
+  margin: 0;
+  padding: 0;
 }
 
 .contact input[type="submit"] {
@@ -177,7 +144,7 @@ em, a, #footer {
   margin-top: 10px;
   padding: 5px;
   max-width: 240px;
-  width: 260px;
+  width: 240px;
   border: 2px solid #f7953c;
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -202,13 +169,12 @@ em, a, #footer {
   padding: 0 30px;
   position: relative;
   clear: both;
-  background: #fff;
   text-align: right;
 }
 
+
 .legal {
   float: left;
-  padding-bottom: 30px;
   font-size: 0.8em;
   display: block;
 }
