@@ -50,7 +50,7 @@ em, a, #footer {
   width: 674px;
   min-height: 100%;
   margin: 0 auto;
-  background: url("../images/shadows.png") top left repeat-y;
+  background: url("../images/shadowsGrey.png") top left repeat-y;
 }
 
 #page {
@@ -71,7 +71,7 @@ em, a, #footer {
 }
 
 .header p {
-  color: #000;
+  color: #656565;
   font-size: 1.1em;
   margin: 10px 0;
   padding-bottom: 20px;
@@ -98,13 +98,13 @@ em, a, #footer {
   border-top-right-radius: 5px;
   -moz-border-radius-topleft: 5px;
   -moz-border-radius-topright: 5px;
-  color: #fff;
+  color: #fff; 
   text-decoration: none;
 }
 
 .navigation a:hover,
 .active > a {
-  background: #000;
+  background: #656565;
 }
 
 .content {
