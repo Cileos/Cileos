@@ -30,8 +30,9 @@ h2 {
   margin: 0 0 15px 0;
   font-family: 'Neutra Text', Helvetica, 'Droid Sans', 'Lucida Grande', Sans-Serif;
   font-size: 1.6em;
-  
   color: #f7953c;
+  font-style: normal;
+  font-weight: 700;
 }
 
 h3 {
@@ -39,11 +40,15 @@ h3 {
   font-family: 'Neutra Text', Helvetica, 'Droid Sans', 'Lucida Grande', Sans-Serif;
   font-size: 1.1em;
   color: #f7953c;
+*  font-style: normal;
+  font-weight: 700;
 }
 
 em, a, #footer {
   font-style: normal;
   color: #f7953c;
+  font-style: normal;
+  font-weight: 700;
 }
 
 #pagewrapper {
@@ -75,13 +80,14 @@ em, a, #footer {
   font-size: 1.1em;
   margin: 10px 0;
   padding-bottom: 20px;
+  font-style: normal;
+  font-weight: 700;
 }
 
 .navigation {
   display: inline;
   float: right;
-  margin-top: -34px;
-  
+  margin-top: -34px;  
   list-style-type: none;
 }
 
