@@ -1,0 +1,91 @@
+.map-box {
+  width: 100%;
+  height: 200px;
+
+  @media screen and (min-width: 42.5em) {
+    height: 300px;
+  }
+}
+
+.map {
+  position: relative;
+
+  h1, h2 {
+    text-align: center;
+    position: absolute;
+    text-shadow: none;
+    left: 50%;
+
+    span {
+      padding: .25em .5em;
+      background: rgba(0, 0, 0, .65);
+      color: $bg-color;
+    }
+  }
+
+  h1 {
+    width: 300px;
+    top: 55px;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    margin-left: -150px;
+    letter-spacing: 0;
+
+    @media screen and (min-width: 32.5em) {
+      font-size: 2em;
+      top: 30px;
+      width: 400px;
+      margin-left: -200px;
+    }
+
+    @media screen and (min-width: 37.5em) {
+      top: 70px;
+    }
+
+    @media screen and (min-width: 55em) {
+      width: 10em;
+      font-size: 2.5em;
+      margin-left: -5em;
+      top: 60px;
+    }
+  }
+
+  h2 {
+    width: 300px;
+    top: 100px;
+    left: 50%;
+    margin-left: -150px;
+    font-weight: 400;
+    font-size: 0.8em;
+
+    @media screen and (min-width: 32.5em) {
+      font-size: 1.3333333em;
+      width: 440px;
+      margin-left: -220px;
+    }
+
+    @media screen and (min-width: 42.5em) {
+      top: 150px;
+    }
+
+    @media screen and (min-width: 55em) {
+      width: 18em;
+      margin-left: -9em;
+      font-size: 1.5em;
+      top: 160px;
+    }
+  }
+
+  .map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    @media screen and (min-width: 42.5em) {
+      display: none;
+    }
+  }
+}
+
