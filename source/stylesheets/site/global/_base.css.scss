@@ -23,3 +23,20 @@ a {
   }
 }
 
+.section-header {
+  text-align: center;
+
+  h1 {
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  
+    span {
+      padding-bottom: .5em;
+    }
+  }
+
+  h2 {
+    color: $nav-inactive-link-color;
+    font-weight: 400;
+  }
+}

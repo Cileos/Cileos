@@ -5,15 +5,8 @@
   color: #fff;
   text-shadow: 0 -1px 0 $shadow-color;
 
-  h1 {
-    text-align: center;
-    letter-spacing: .05em;
-    text-transform: uppercase;
-  
-    span {
-      padding-bottom: .5em;
-      border-bottom: 1px solid #444;
-    }
+  header {
+    @extend .section-header;
   }
 
   ul {
@@ -23,6 +16,7 @@
     padding: 0;
     margin: 0 auto;
     width: 280px;
+    background: image-url("process/bg-mobile.png") 30px 0 repeat-y;
   }
 
   li {
@@ -58,6 +52,7 @@
   @media screen and (min-width: 25em) {
     ul {
       width: auto;
+      background: transparent;
     }
 
     li {
@@ -67,7 +62,8 @@
       padding-top: 70px;
       background-position: center top;
       text-align: center;
-      
+      line-height: 1.25;
+
       &:nth-child(2n) {
         @include span-columns(1 omega, 2);
       }
@@ -126,6 +122,7 @@
   @media screen and (min-width: 55.3125em) {
     ul {
       background: image-url("process/bg.png") 0 70px repeat-x;
+      margin: 50px 0;
     }
 
     li {
