@@ -1,0 +1,100 @@
+nav, [role=navigation] {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: block;
+    float: left;
+    margin-right: 20px;
+  }
+
+  a {
+    color: $nav-inactive-link-color;
+
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  .active a {
+    color: $nav-link-color;
+  }
+
+  .button {
+    color: $bg-color;
+
+    &:hover {
+      color: $bg-color;
+    }
+  }
+}
+
+header.master nav {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  width: 100%;
+  clear: left;
+
+  @media screen and (min-width: 38.75em) {
+    width: auto;
+    clear: none;
+  }
+
+
+  li {
+    width: 50%;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+
+    @media screen and (min-width: 38.75em) {
+      padding-top: 30px;
+      margin-right: 40px;
+      width: auto;
+
+      &.active {
+        padding-top: 25px;
+        border-top: 5px solid $brand-color;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .start-a-project {
+    position: absolute;
+    top: 25px;
+    right: 5px;
+    width: 175px;
+    padding: 0;
+    text-align: left;
+
+    @media screen and (min-width: 38.75em) {
+      width: auto;
+      position: static;
+      top: auto;
+      right: auto;
+      padding-top: 30px;
+    }
+  }
+
+  .phone {
+    display: block;
+    font-size: .625em;
+    letter-spacing: 0;
+    color: $nav-inactive-link-color;
+    font-weight: 400;
+    text-transform: none;
+    margin-top: 10px;
+    margin-left: 15px;
+
+    b {
+      font-weight: 900;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+header.master {
+  h1 a {
+    @include image-2x("logo.png", "logo-2x.png", 116px, 28px);
+
+    text-indent: -999em;
+    width: 120px;
+    height: 28px;
+    background-repeat: no-repeat;
+  }
+
+  h1 img {
+    visibility: hidden;
+  }
+}

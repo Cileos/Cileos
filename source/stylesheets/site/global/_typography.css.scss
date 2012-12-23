@@ -1,0 +1,36 @@
+body { 
+  font-size:100%; 
+  line-height:1.25;
+  font-family: "proxima-nova-alt", Helvetica, Arial, sans-serif; 
+  font-weight: 400;
+}
+
+h1, h2, h3 { 
+  margin-top:0; 
+  margin-bottom:0; 
+  font-family: "proxima-nova-alt", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: -.05em;
+}
+
+h1 { 
+  font-size:2em; 
+}
+
+h1, h2 { 
+  padding:1.25em 0; 
+}
+
+h2 { 
+  font-size:1.33333em; 
+}
+
+h3 { 
+  font-size:1.16667em; 
+  padding:1.51786em 0; 
+}
+
+header.master nav {
+  font-family: "proxima-nova-alt", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+}

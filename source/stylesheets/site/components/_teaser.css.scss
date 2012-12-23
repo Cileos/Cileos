@@ -1,0 +1,52 @@
+.teaser {
+  background: $brand-color image-url("teaser-bg.jpg") center center no-repeat;
+  color: $bg-color;
+  background-size: auto 100%;
+  padding: 30px 0;
+  min-height: 300px;
+  position: relative;
+
+  @media screen and (min-width: 25em) {
+    min-height: 280px;
+    background-size: 100% auto;
+  }
+
+  @media screen and (min-width: 37.5em) {
+    padding: 100px 0;
+    min-height: 430px;
+  }
+
+  @media screen and (min-width: 42.5em) {
+    margin-top: 60px;
+  }
+
+  .teaser-text {
+    @include image-2x("teaser-text-mobile.png", "teaser-text-mobile-2x.png", 300px, 125px);
+
+    text-indent: -999em;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 300px;
+    min-height: 125px;
+
+    @media screen and (min-width: 37.5em) {
+      @include image-2x("teaser-text.png", "teaser-text-2x.png", 503px, 210px);
+
+      min-width: 505px;
+      min-height: 210px;
+    }
+  }
+
+  .intro {
+    @include image-2x("dashed-bg-right.png", "dashed-bg-right-2x.png", 4px, 4px);
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 0 -1px 0 $shadow-color;
+    letter-spacing: 0;
+  }
+}

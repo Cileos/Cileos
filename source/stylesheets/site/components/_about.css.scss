@@ -1,0 +1,110 @@
+.about {
+  font-size: 1.125em;
+
+  .column {
+    padding-top: 20px;
+
+    @media screen and (min-width: 42.5em) {
+      @include span-columns(4);
+
+      &:last-child {
+        @include span-columns(4 omega);
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 900;
+    padding: 0;
+    background-position: center left;
+    background-repeat: repeat-x;
+
+    span {
+      background: $bg-color image-url("bg.png");
+      padding: 0 1em 0 0;
+
+      @media screen and (-webkit-min-device-pixel-ratio: 1.25) {
+        background-image: image-url("bg-2x.png");
+        background-size: 80px 80px;
+      }
+    }
+
+    @media screen and (min-width: 47.5em) {
+      text-align: center;
+
+      span {
+        padding: 0 1em;
+      }
+    }
+  }
+
+  .passionate h1 {
+    background-image: image-url("header-line-red.png");
+  }
+
+  .flexible h1 {
+    background-image: image-url("header-line-yellow.png");
+  }
+
+  .skilled h1 {
+    background-image: image-url("header-line-blue.png");
+  }
+
+  @media screen and (min-width: 42.5em) {
+    .column {
+      margin-top: 20px;
+      background: image-url("skills-bg.png") 0 45px no-repeat;
+
+      @media screen and (-webkit-min-device-pixel-ratio: 1.25) {
+        background-image: image-url("skills-bg-2x.png");
+        background-size: auto 25px;
+      }
+     
+      header {
+        background-position: center top;
+        background-repeat: no-repeat;
+        padding-top: 95px;
+
+        @media screen and (-webkit-min-device-pixel-ratio: 1.25) {
+          background-size: 63px 73px;
+        }
+      }
+
+      h1 {
+        background-repeat: repeat-x;
+        background-position: center left;
+        padding: 0;
+      }
+    }
+
+    .passionate {
+      header {
+        background-image: image-url("badge-passionate.png");
+
+        @media screen and (-webkit-min-device-pixel-ratio: 1.25) {
+          background-image: image-url("badge-passionate-2x.png");
+        }
+      }
+    }
+
+    .flexible {
+      header {
+        background-image: image-url("badge-flexible.png");
+
+        @media screen and (-webkit-min-device-pixel-ratio: 1.25) {
+          background-image: image-url("badge-flexible-2x.png");
+        }
+      }
+    }
+
+    .skilled {
+      header {
+        background-image: image-url("badge-skilled.png");
+
+        @media screen and (-webkit-min-device-pixel-ratio: 1.25) {
+          background-image: image-url("badge-skilled-2x.png");
+        }
+      }
+    }
+  }
+}
