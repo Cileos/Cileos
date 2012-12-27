@@ -24,7 +24,7 @@
   }
 
   h1 {
-    width: 300px;
+    min-width: 300px;
     top: 55px;
     text-transform: uppercase;
     font-size: 1.25em;
@@ -34,7 +34,7 @@
     @media screen and (min-width: 32.5em) {
       font-size: 2em;
       top: 30px;
-      width: 400px;
+      min-width: 400px;
       margin-left: -200px;
     }
 
@@ -51,7 +51,7 @@
   }
 
   h2 {
-    width: 300px;
+    min-width: 300px;
     top: 100px;
     left: 50%;
     margin-left: -150px;
@@ -60,7 +60,7 @@
 
     @media screen and (min-width: 32.5em) {
       font-size: 1.3333333em;
-      width: 440px;
+      min-width: 440px;
       margin-left: -220px;
     }
 
@@ -69,7 +69,7 @@
     }
 
     @media screen and (min-width: 55em) {
-      width: 18em;
+      min-width: 18em;
       margin-left: -9em;
       font-size: 1.5em;
       top: 160px;
