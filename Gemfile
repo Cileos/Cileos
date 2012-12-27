@@ -1,6 +1,5 @@
 source :rubygems
 
-gem "bundler"
 gem "middleman", "~>3.0.4"
 gem "haml"
 gem "susy"
