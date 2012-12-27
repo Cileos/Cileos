@@ -1,0 +1,23 @@
+%a{id: 'work'}
+
+.page.work
+  %header
+    %h1
+      %span Our work
+    %h2 
+      %span We're always proud to see our work in action
+
+  %ul.projects
+    %li.clockwork
+      %dl
+        %dt
+          = image_tag "work/clockwork.jpg", alt: "Clockwork"
+        %dd
+          %h3 Clockwork
+
+          %p 
+            Clockwork is our shift-planning super tool. We found need and a 
+            market and we decided to build product that our friends need.
+
+          %p.link-to-project
+            %a{href: "http://clockwork.io", target: "_blank", class: "button"} Visit website

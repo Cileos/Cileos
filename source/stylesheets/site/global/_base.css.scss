@@ -1,0 +1,42 @@
+@import "compass/css3/box-sizing";
+
+* {
+  @include box-sizing(border-box);
+}
+
+body {
+  @include image-2x("bg.png", "bg-2x.png", 80px, 80px);
+
+  background-color: $bg-color;
+  color: $text-color;
+  text-shadow: 0 -1px 0 $glow-color;
+}
+
+a {
+  @include transition(color .25s $easing);
+
+  color: $brand-color;
+  text-decoration: $link-decoration;
+
+  &:hover {
+    color: darken($brand-color, 20%);
+  }
+}
+
+.section-header {
+  text-align: center;
+
+  h1 {
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  
+    span {
+      padding-bottom: .5em;
+    }
+  }
+
+  h2 {
+    color: $nav-inactive-link-color;
+    font-weight: 400;
+  }
+}

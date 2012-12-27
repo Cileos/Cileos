@@ -1,0 +1,141 @@
+.production-line {
+  background: #181818;
+  border-top: 20px solid rgba(255,255,255,.1);
+  border-bottom: 20px solid rgba(255,255,255,.1);
+  color: #fff;
+  text-shadow: 0 -1px 0 $shadow-color;
+
+  header {
+    @extend .section-header;
+  }
+
+  ul {
+    @include clearfix;
+
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 280px;
+    background: image-url("process/bg-mobile.png") 30px 0 repeat-y;
+  }
+
+  li {
+    display: block;
+    width: 100%;
+    padding-left: 80px;
+    background-position: center left;
+    background-repeat: no-repeat;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+
+  .ideas {
+    @include image-2x("process/ideas-mobile.png", "process/ideas-mobile-2x.png", 60px, 60px);
+  }
+
+  .design {
+    @include image-2x("process/design-mobile.png", "process/design-mobile-2x.png", 60px, 60px);
+  }
+
+  .coding {
+    @include image-2x("process/coding-mobile.png", "process/coding-mobile-2x.png", 60px, 60px);
+  }
+
+  .release {
+    @include image-2x("process/release-mobile.png", "process/release-mobile-2x.png", 60px, 60px);
+  }
+
+  .maintenance {
+    @include image-2x("process/maintenance-mobile.png", "process/maintenance-mobile-2x.png", 60px, 60px);
+  }
+
+  @media screen and (min-width: 25em) {
+    ul {
+      width: auto;
+      background: transparent;
+    }
+
+    li {
+      @include span-columns(1, 2);
+
+      padding: 0;
+      padding-top: 70px;
+      background-position: center top;
+      text-align: center;
+      line-height: 1.25;
+
+      &:nth-child(2n) {
+        @include span-columns(1 omega, 2);
+      }
+    }
+  }
+
+  @media screen and (min-width: 30em) {
+    li {
+      @include span-columns(1, 3);
+
+      line-height: 1.25;
+      margin-bottom: 30px;
+
+      &:nth-child(2n) {
+        @include span-columns(1, 3);
+      }
+
+      &:nth-child(3n) {
+        @include span-columns(1 omega, 3);
+      }
+
+      &:last-child {
+        @include span-columns(1 omega, 3);
+        
+        float: left;
+      }
+    }
+  }
+
+  @media screen and (min-width: 37.5em) {
+    li {
+      padding-top: 160px;
+    }
+
+    .ideas {
+      @include image-2x("process/ideas.png", "process/ideas-2x.png", 137px, 137px);
+    }
+
+    .design {
+      @include image-2x("process/design.png", "process/design-2x.png", 137px, 137px);
+    }
+
+    .coding {
+      @include image-2x("process/coding.png", "process/coding-2x.png", 137px, 137px);
+    }
+
+    .release {
+      @include image-2x("process/release.png", "process/release-2x.png", 137px, 137px);
+    }
+
+    .maintenance {
+      @include image-2x("process/maintenance.png", "process/maintenance-2x.png", 137px, 137px);
+    }
+  }
+
+  @media screen and (min-width: 55.3125em) {
+    ul {
+      background: image-url("process/bg.png") 0 70px repeat-x;
+      margin: 50px 0;
+    }
+
+    li {
+      @include span-columns(1, 5);
+
+      &:nth-child(2n),
+      &:nth-child(3n) {
+        @include span-columns(1, 5);
+      }
+
+      &:last-child {
+        @include span-columns(1 omega, 5);
+      }
+    }
+  }
+}

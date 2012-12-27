@@ -1,0 +1,109 @@
+.work {
+  padding-bottom: 50px;
+
+  header {
+    @extend .section-header;
+
+    h1 {
+      padding-bottom: 0;
+
+      span {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+    }
+
+    h2 {
+      padding-top: .5em;
+      font-style: italic;
+
+      span {
+        padding-bottom: .75em;
+      }
+    }
+  }
+}
+
+.projects {
+  list-style: none;
+  padding: 0;
+
+  dt {
+    min-height: 150px;
+
+    img {
+      visibility: hidden;
+      display: none;
+    }
+  }
+
+  dt, dd {
+    padding: 0;
+    margin: 0;
+  }
+
+  dd {
+    background: #181818;
+    color: $bg-color;
+    text-shadow: 0 -1px 0 $shadow-color;
+    padding: 20px;
+
+    h3 {
+      text-transform: uppercase;
+      font-size: 1.5em;
+      letter-spacing: 0;
+      padding: .5em 0 1em;
+      margin-bottom: .5em;
+      border-bottom: 1px solid #444;
+    }
+  }
+
+  .link-to-project {
+    text-align: center;
+    padding-top: 1.5em;
+  }
+
+  .button {
+    display: inline;
+  }
+
+  @media screen and (min-width: 37.5em) {
+    dl {
+      @include clearfix;
+    }
+
+    dt, dd {
+      min-height: 300px;
+    }
+
+    dt, dd {
+      width: 50%;
+      float: left;
+    }
+
+    .link-to-project {
+      text-align: left;
+    } 
+  }
+
+  @media screen and (min-width: 42.5em) {
+    dt {
+      width: 65%;
+    }
+
+    dd {
+      width: 35%;
+    }
+  }
+
+  .clockwork {
+    dl {
+      background: #117bbf;
+    }
+
+    dt {
+      background: image-url("work/clockwork.jpg") bottom left no-repeat;
+      background-size: 100% auto;
+    }
+  }
+}

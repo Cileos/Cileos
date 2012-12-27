@@ -1,0 +1,47 @@
+%a{id: "contact"}
+
+.map
+  %iframe{frameBorder: '0', src: 'http://a.tiles.mapbox.com/v3/dotmariusz.map-79ndheeh.html#15/52.50423057585212/13.412269729778972', class: "map-box"}
+
+  .map-overlay
+
+  %h1 
+    %span Start a project
+  %h2 
+    %span Here's where the heavy lifting takes place
+
+.contact
+  .page
+    %form
+      %fieldset
+        %p
+          %label Your name
+          %input{type: "text", id: "name", name: "name"}
+
+        %p
+          %label Your email address
+          %input{type: "email", id: "email", name: "email"}
+
+        %p 
+          %label Short project description
+          %textarea{rows: 10, cols: 40}
+
+        %p
+          %input{type: "submit", value: "Send"}
+
+    .address-data
+      .address
+        %p.name Cileos UG
+        %p Tieckstraße 1
+        %p 14469 Potsdam
+
+      .info
+        Betahaus, old printing house in Berlin  is where we 
+        live most of the time.  Pop in for coffee, tea or 
+        a web app.
+
+      .address
+        %p.name Betahaus
+        %p Prinzessinnenstraße 19-20 (5th floor)
+        %p 10969 Berlin
+        %p.phone +49 (0) 331 28 05 454

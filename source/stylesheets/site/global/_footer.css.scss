@@ -1,0 +1,19 @@
+footer.master {
+  @include clearfix;
+
+  font-size: .65em;
+  color: $nav-inactive-link-color;
+  padding: 20px;
+
+  .copy {
+    float: left;
+  }
+
+  .imprint {
+    float: right;
+  }
+
+  a {
+    color: $nav-inactive-link-color;
+  }
+}

@@ -1,0 +1,27 @@
+form {
+  fieldset {
+    border: none;
+    padding: 0;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1em;
+    }
+  }
+
+  label {
+    display: block;
+  }
+
+  input, textarea {
+    font-family: "proxima-nova-alt", Helvetica, Arial, sans-serif;
+  }
+
+  input[type=text],
+  input[type=email],
+  textarea {
+    border: 1px solid $nav-inactive-link-color;
+    padding: .5em 1em;
+    width: 100%;
+  }
+}

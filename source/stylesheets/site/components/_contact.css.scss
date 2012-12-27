@@ -1,0 +1,42 @@
+.address {
+  p {
+    margin: 0;
+  }
+
+  .name {
+    font-weight: 700;
+  }
+}
+
+.address-data { 
+  @media screen and (min-width: 42.5em) {
+    @include span-columns(4 omega, 12);
+
+    padding-left: 20px;
+  }
+ 
+  .info {
+    font-size: .8em;
+    padding: 1em 0;
+  }
+}
+
+.contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #fff;
+
+  form {
+    @media screen and (min-width: 42.5em) {
+      @include span-columns(8, 12);
+    }
+  }
+
+  .phone {
+    @include image-2x("icon-phone.png", "icon-phone-2x.png", 16px, 16px);
+
+    background-position: center left;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+  }
+}

@@ -1,2 +1,4 @@
-use Rack::Static, :urls => ["/stylesheets", "/images", "/javascript", "/imprint.html", "/de/landing.html", "/en/landing.html"], :root => "public"
-run lambda { |env| [200, { 'Content-Type' => 'text/html', 'Cache-Control' => 'public, max-age=86400' }, File.open('public/index.html', File::RDONLY)] }
+require 'rubygems'
+require 'middleman/rack'
+
+run Middleman.server
