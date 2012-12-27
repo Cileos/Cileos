@@ -1,1 +1,2 @@
-Readme needs text
+for migrating to heroku cedar stack a Procfile is needed
+also had to add a buildpack to get middleman running (http://github.com/indirect/heroku-buildpack-middleman.git)
