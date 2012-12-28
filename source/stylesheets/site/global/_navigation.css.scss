@@ -45,6 +45,8 @@ header.master nav {
 
 
   li {
+    @include transition(border .25s $easing);
+
     width: 50%;
     margin: 0;
     padding: 20px;
@@ -80,6 +82,15 @@ header.master nav {
       top: auto;
       right: auto;
       padding-top: 30px;
+
+
+      &.active {
+        color: $bg-color;
+
+        .button {
+          color: $bg-color;
+        }
+      }        
     }
   }
 

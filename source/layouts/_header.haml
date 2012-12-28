@@ -1,17 +1,17 @@
 %header.master
   .page
     %h1
-      %a{href: "#"}
+      %a{href: "/"}
         = image_tag "logo.png", alt: "Cileos"
     
-    %nav{role: "navigation"}
-      %ul
+    %nav#navbar{role: "navigation"}
+      %ul.nav
         %li.about
-          %a{href: "#about"} About
+          %a{href: "#about-section"} About
         %li.work
-          %a{href: "#work"} Work
+          %a{href: "#work-section"} Work
         %li.start-a-project
-          %a{href: "#contact", class: "button"} Start a project
+          %a{href: "#contact-section", class: "button"} Start a project
           %span.phone 
             or call us at 
             %b +49 331 280 54 54

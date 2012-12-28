@@ -1,7 +1,9 @@
-//= require jquery.min
-//= require waypoints.min
+#= require jquery.min
+#= require bootstrap-scrollspy
 
 $ ->
+  headerHeight = 80
+
   $('#funny-cat-video').click ->
     $('.funny-cat-video').show()
 
@@ -10,10 +12,15 @@ $ ->
 
     return false
 
-  $('.about-section').waypoint ->
-    $('[role=navigation] li').removeClass('active')
-    $('[role=navigation] .about').addClass('active')
+  $('body').scrollspy(
+    offset: headerHeight
+  )
 
-  $('.work-section').waypoint ->
-    $('[role=navigation] li').removeClass('active')
-    $('[role=navigation] .work').addClass('active')
+  $('#navbar a').click ->
+    sectionName = $('body').find($(this).attr("href"))
+
+    $('html, body').animate(
+      scrollTop: sectionName.offset().top - headerHeight
+    , 750)
+
+    return false
