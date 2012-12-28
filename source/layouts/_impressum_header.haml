@@ -1,0 +1,18 @@
+%header.master
+  .page
+    %h1
+      %a{href: "/"}
+        = image_tag "logo.png", alt: "Cileos"
+    
+    %nav#navbar{role: "navigation"}
+      %ul.nav
+        %li.about
+          %a{href: "/#about-section"} About
+        %li.work
+          %a{href: "/#work-section"} Work
+        %li.start-a-project
+          %a{href: "/#contact-section", class: "button"} Start a project
+          %span.phone 
+            or call us at 
+            %b +49 331 280 54 54
+

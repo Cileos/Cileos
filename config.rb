@@ -21,7 +21,7 @@ require 'susy'
 # page "/path/to/file.html", :layout => false
 #
 # With alternative layout
-# page "/path/to/file.html", :layout => :otherlayout
+page "/impressum.html", :layout => :impressum
 #
 # A path which all have the same layout
 # with_layout :admin do
