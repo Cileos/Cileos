@@ -12,7 +12,9 @@ $ ->
 
     return false
 
-  $('#navbar').scrollspy()
+  $('body').scrollspy(
+    offset: headerHeight
+  )
 
   $('#navbar a').click ->
     sectionName = $('body').find($(this).attr("href"))
