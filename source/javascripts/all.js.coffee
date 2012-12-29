@@ -16,7 +16,7 @@ $ ->
     offset: headerHeight
   )
 
-  $('#navbar a').click ->
+  $('a.scroll').click ->
     sectionName = $('body').find($(this).attr("href"))
 
     $('html, body').animate(
