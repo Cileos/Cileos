@@ -10,7 +10,7 @@
 
 .contact
   .page
-    %form
+    %form{:action => "/contact", :method => "post"}
       %fieldset
         %p
           %label Your name
@@ -22,7 +22,7 @@
 
         %p 
           %label Short project description
-          %textarea{rows: 10, cols: 40}
+          %textarea{id: "message", name: "message", rows: 10, cols: 40}
 
         %p
           %input{type: "submit", value: "Send"}
