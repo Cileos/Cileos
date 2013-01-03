@@ -28,6 +28,10 @@ GEM
     i18n (0.6.1)
     json (1.7.5)
     listen (0.5.3)
+    mail (2.5.3)
+      i18n (>= 0.4.0)
+      mime-types (~> 1.16)
+      treetop (~> 1.4.8)
     maruku (0.6.1)
       syntax (>= 1.0.0)
     middleman (3.0.7)
@@ -63,6 +67,7 @@ GEM
       middleman-more (>= 3.0.1)
       sprockets (~> 2.1, < 2.5)
       sprockets-sass (~> 0.9.0)
+    mime-types (1.19)
     multi_json (1.5.0)
     padrino-core (0.10.7)
       activesupport (~> 3.2.0)
@@ -73,6 +78,9 @@ GEM
     padrino-helpers (0.10.7)
       i18n (~> 0.6)
       padrino-core (= 0.10.7)
+    polyglot (0.3.3)
+    pony (1.4)
+      mail (> 2.0)
     rack (1.4.1)
     rack-protection (1.3.2)
       rack
@@ -109,6 +117,9 @@ GEM
       rack (>= 1.0.0)
     thor (0.15.4)
     tilt (1.3.3)
+    treetop (1.4.12)
+      polyglot
+      polyglot (>= 0.3.1)
     uglifier (1.2.7)
       execjs (>= 0.3.0)
       multi_json (~> 1.3)
@@ -123,5 +134,6 @@ DEPENDENCIES
   haml
   middleman (~> 3.0.4)
   middleman-smusher
+  pony
   susy
   thin
