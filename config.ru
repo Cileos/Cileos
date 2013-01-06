@@ -1,5 +1,6 @@
 require 'rubygems'
 require 'middleman/rack'
+require './nowww'
 require 'sinatra'
 require 'pony'
 
@@ -25,5 +26,6 @@ post '/contact' do
   redirect '/' 
 end
 
+use NoWWW
 use Sinatra::Application
 run Middleman.server
