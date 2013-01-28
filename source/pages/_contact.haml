@@ -14,15 +14,15 @@
       %fieldset
         %p
           %label Your name
-          %input{type: "text", id: "name", name: "name"}
+          %input{type: "text", id: "name", name: "name", required: "required", placeholder: "Your name"}
 
         %p
           %label Your email address
-          %input{type: "email", id: "email", name: "email"}
+          %input{type: "email", id: "email", name: "email", required: "required", placeholder: "your@email.com"}
 
         %p 
           %label Short project description
-          %textarea{id: "message", name: "message", rows: 10, cols: 40}
+          %textarea{id: "message", name: "message", rows: 10, cols: 40, required: "required", placeholder: "Your project"}
 
         %p
           %input{type: "submit", value: "Send"}
