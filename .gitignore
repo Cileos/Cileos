@@ -15,3 +15,6 @@
 
 # Ignore foreman .env
 /.env
+
+# Ignore Finder .DS_Store
+.DS_Store

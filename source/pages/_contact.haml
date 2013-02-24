@@ -1,6 +1,5 @@
 .map
-  %iframe{frameBorder: '0', src: 'http://a.tiles.mapbox.com/v3/dotmariusz.map-79ndheeh.html#15/52.505824031198436/13.41239847581167', class: "map-box"}
-
+  .map-container#map
   .map-overlay
 
   %h1 
@@ -10,19 +9,19 @@
 
 .contact
   .page
-    %form{:action => "/contact", :method => "post"}
+    %form
       %fieldset
         %p
           %label Your name
-          %input{type: "text", id: "name", name: "name", required: "required", placeholder: "Your name"}
+          %input{type: "text", id: "name", name: "name"}
 
         %p
           %label Your email address
-          %input{type: "email", id: "email", name: "email", required: "required", placeholder: "your@email.com"}
+          %input{type: "email", id: "email", name: "email"}
 
         %p 
           %label Short project description
-          %textarea{id: "message", name: "message", rows: 10, cols: 40, required: "required", placeholder: "Your project"}
+          %textarea{rows: 10, cols: 40}
 
         %p
           %input{type: "submit", value: "Send"}

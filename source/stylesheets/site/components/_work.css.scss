@@ -29,7 +29,10 @@
   padding: 0;
 
   dt {
-    min-height: 150px;
+    min-height: 200px;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 
     img {
       visibility: hidden;
@@ -81,6 +84,10 @@
       float: left;
     }
 
+    dt {
+      background-size: auto 100%;
+    }
+
     .link-to-project {
       text-align: left;
     } 
@@ -89,6 +96,7 @@
   @media screen and (min-width: 42.5em) {
     dt {
       width: 65%;
+      background-size: 100% auto;
     }
 
     dd {
@@ -100,10 +108,13 @@
     dl {
       background: #117bbf;
     }
+  }
 
-    dt {
-      background: image-url("work/clockwork.jpg") bottom left no-repeat;
-      background-size: 100% auto;
-    }
+  .clockwork dt {
+    background-image: image-url("work/clockwork.jpg");
+  }
+
+  .heute-kaufen dt {
+    background-image: image-url("work/heute-kaufen.jpg");
   }
 }

@@ -3,7 +3,7 @@
   %head
     %title Cileos - Creative Software Builders
 
-    = stylesheet_link_tag "normalize", "site"
+    = stylesheet_link_tag "vendor/normalize", "vendor/leaflet", "site"
     = javascript_include_tag "all"
 
     %meta{charset: "utf-8"}
@@ -13,6 +13,8 @@
 
     :javascript
       try{Typekit.load();}catch(e){}
+
+    = partial "layouts/analytics"
 
   %body
     = partial "layouts/header"
