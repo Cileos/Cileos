@@ -1,6 +1,6 @@
-#= require jquery.min
-#= require bootstrap-scrollspy
-#= require leaflet
+#= require vendor/jquery.min
+#= require vendor/bootstrap-scrollspy
+#= require vendor/leaflet
 
 $ ->
   headerHeight = 80
