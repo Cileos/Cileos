@@ -12,7 +12,7 @@ It is a combined sinatra/middleman app based on rack and will be run with thin.
 deploy
 ------
 
-We try to mimic heroku-style deploy by just pushing to a remote repository.
+We mimic heroku-style deploy by just pushing to a remote repository.
 
 First, you have to add it:
 
