@@ -1,2 +1,10 @@
-for migrating to heroku cedar stack a Procfile is needed
-also had to add a buildpack to get middleman running (http://github.com/indirect/heroku-buildpack-middleman.git)
+cileos.com
+==========
+
+This repo contains the source used for the http://cileos.com page.
+
+Until October 2014 it ran on heroku, but they turned off the support for
+A-record domains and only accept CNAME. The (current) DNS provider only allows
+us to set A. So we move that page to our own server.
+
+It is a combined sinatra/middleman app based on rack and will be run with thin.
