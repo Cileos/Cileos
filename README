@@ -8,3 +8,16 @@ A-record domains and only accept CNAME. The (current) DNS provider only allows
 us to set A. So we move that page to our own server.
 
 It is a combined sinatra/middleman app based on rack and will be run with thin.
+
+deploy
+------
+
+We try to mimic heroku-style deploy by just pushing to a remote repository.
+
+First, you have to add it:
+
+     $ git remote add live application@mett.clockwork.io:projects/cileos.com/current
+
+And now, whenever you want to deploy:
+
+     $ git push live master
