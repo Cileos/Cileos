@@ -16,7 +16,7 @@ We mimic heroku-style deploy by just pushing to a remote repository.
 
 First, you have to add it:
 
-     $ git remote add live application@mett.clockwork.io:projects/cileos.com/current
+     $ git remote add live ssh://niklas@lanpartei.de:22117/home/niklas/app/current
 
 And now, whenever you want to deploy:
 
